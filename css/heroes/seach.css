@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Yeseva+One&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	background-color: #09092d;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.burger {
+	background-image: url('/imgs/home/guides/460/burger.png');
+	width: 76px;
+	height: 58px;
+	margin: 29px 0 0 18px;
+	animation-name: burgOff;
+	animation-duration: 1s;
+}
+
+.Active {
+	background-image: url('/imgs/home/guides/460/burger.png');
+	width: 76px;
+	height: 58px;
+	margin: 29px 0 0 18px;
+	transform: rotate(90deg);
+	animation-name: burgOn;
+	animation-duration: 1s;
+}
+
+.genshin_logo {
+	margin-top: 17px;
+}
+
+.nav1,
+.nav2 {
+	display: none;
+}
+
+.site_logo {
+	margin: 9px 7px 0 0;
+}
+
+.burger:hover {
+	cursor: pointer;
+}
+
+.active:hover {
+	cursor: pointer;
+}
+
+section {
+	margin-top: 35px;
+}
+
+.burgerOn {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.tg,
+.yt {
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 50px;
+	font-family: 'Yeseva One', cursive;
+}
+
+.ua {
+	color: #fff;
+	margin-top: 95px;
+	font-family: 'Yeseva One', cursive;
+	font-size: 30px;
+}
+
+.ds {
+	margin-top: 190px;
+	font-family: 'Yeseva One', cursive;
+	font-size: 30px;
+}
+
+.noneBurger {
+	display: none;
+}
+
+.footer {
+	margin-top: 148px;
+	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.footer2 {
+	margin-top: 148px;
+	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.right h1 {
+	color: #fff;
+	font-size: 25px;
+	margin-left: 12px;
+	font-family: 'Yeseva One', cursive;
+}
+
+.right h2 {
+	color: #747474;
+	font-size: 16px;
+	margin-left: 46px;
+	font-family: 'Comfortaa', cursive;
+}
+
+.left {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-right: 12px;
+}
+
+.ds_img {
+	height: 40px;
+	width: 40px;
+	background-image: url('/imgs/home/guides/460/ds.png');
+}
+
+.yt_img {
+	height: 40px;
+	width: 40px;
+	background-image: url('/imgs/home/guides/460/yt.png');
+}
+
+.tg_img {
+	height: 40px;
+	width: 40px;
+	background-image: url('/imgs/home/guides/460/tg.png');
+}
+
+.char {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 37px;
+}
+
+.char a {
+	text-align: center;
+}
+
+.char_name {
+	text-align: center;
+	color:#fff;
+	font-size: 30px;
+}
+
+.search input {
+	height: 50px;
+	width: 280px;
+	color: #fff;
+	background: none;
+	border: solid #fff 2px;
+	border-radius: 30px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.search {
+	height: 50px;
+	width: 280px;
+	margin: 0 auto 114px auto;
+}
+
+.hide {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.ds_img {
+		height: 63px;
+		width: 63px;
+		background-image: url('/imgs/home/guides/768/ds.png');
+		margin: 29px 0 24px 0;
+	}
+	.yt_img {
+		height: 63px;
+		width: 63px;
+		background-image: url('/imgs/home/guides/768/yt.png');
+		margin: 29px 0 24px 0;
+	}
+	.tg_img {
+		height: 63px;
+		width: 63px;
+		background-image: url('/imgs/home/guides/768/tg.png');
+		margin: 29px 0 24px 0;
+	}
+	.search input {
+		width: 476px;
+	}
+	.search {
+		width: 476px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.burger {
+		display: none;
+	}
+	.header {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.nav1,
+	.nav2 {
+		display: flex;
+	}
+	.nav1 {
+		gap: 48px;
+		margin-top: 69px;
+	}
+	.nav1 a {
+		color: #fff;
+		text-decoration: none;
+		font-size: 30px;
+		font-family: 'Yeseva One', cursive;
+	}
+	.nav2 {
+		gap: 35px;
+		margin-top: 72px;
+	}
+	.nav2 a {
+		color: #fff;
+		font-size: 30px;
+		font-family: 'Yeseva One', cursive;
+		text-decoration: underline;
+	}
+	.nav_ds {
+		margin-right: 23px;
+	}
+	.site_logo {
+		margin-left: 24px;
+	}
+	.footer {
+		margin-top: 1420px;
+		background-color: #000;
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		width: 100%;
+	}
+	.right h1 {
+		margin: 10px 0 12px 32px;
+	}
+	.right h2 {
+		margin-left: 63px;
+	}
+	.char_list {
+		display: grid;
+		grid-template-columns: 200px 200px 200px 200px 200px;
+		gap: 5%;
+	}
+}
+
+@media (min-width: 1366px) {
+	.yt_img {
+		margin-right: 108px;
+	}
+	.footer {
+		background-color: #000;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		position: absolute;
+	}
+}
+
+@keyframes burgOn {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(90deg);
+	}
+}
+
+@keyframes burgOff {
+	from {
+		transform: rotate(90deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
